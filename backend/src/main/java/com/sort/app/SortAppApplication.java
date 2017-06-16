@@ -1,4 +1,4 @@
-package com.hmsort.app;
+package com.sort.app;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan({"com.hmsort"})
-public class HmSortAppApplication {
+@ComponentScan({"com.sort"})
+public class SortAppApplication {
 
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(HmSortAppApplication.class, args);
+        SpringApplication.run(SortAppApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.hmsort.app.controller;
+package com.sort.app.controller;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,19 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hmsort.app.service.HmSortService;
+import com.sort.app.service.SortService;
 
 @RestController
 @CrossOrigin("http://localhost:3000")
-@ComponentScan({"com.hmsort"})
-public class HmSortController {
+@ComponentScan({"com.sort"})
+public class SortController {
 
-	private HmSortService hmSortService;
+	private SortService sortService;
 
     @Autowired
-    public HmSortController(HmSortService hmSortService) {
+    public SortController(SortService sortService) {
 
-        this.hmSortService = hmSortService;
+        this.sortService = sortService;
     }
 	 @RequestMapping(value="/sortToAscending",method = RequestMethod.GET)
 	    public HashMap<String, Object> sortToAscending(@RequestParam (value = "numbers") final String[] numbers) {
@@ -35,7 +35,7 @@ public class HmSortController {
 		 if(numbers.length != 0){
 				long total = 0;
 			    long start = System.nanoTime();
-			    outputArray = hmSortService.ascendingSort(numbArray);
+			    outputArray = sortService.ascendingSort(numbArray);
 			 
 			  	long end = System.nanoTime();
 				long time = TimeUnit.MILLISECONDS.convert(end - start, TimeUnit.NANOSECONDS);

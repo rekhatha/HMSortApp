@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.hmsort</groupId>
-	<artifactId>HM_SortApp</artifactId>
+	<groupId>com.sort</groupId>
+	<artifactId>SortApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>HM_SortApp</name>
-	<description>HM Sorting Application</description>
+	<name>SortApp</name>
+	<description>Sorting Application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

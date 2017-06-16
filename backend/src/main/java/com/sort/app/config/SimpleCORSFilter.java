@@ -1,4 +1,4 @@
-package com.hmsort.app.config;
+package com.sort.app.config;
 
 import java.io.IOException;
 

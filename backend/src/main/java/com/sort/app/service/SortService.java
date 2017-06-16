@@ -1,11 +1,11 @@
-package com.hmsort.app.service;
+package com.sort.app.service;
 
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 @Service
 @ComponentScan({"com.hmsort"})
-public class HmSortService {
+public class SortService {
 
 	public int[] ascendingSort(int[] randomArray) {
 		

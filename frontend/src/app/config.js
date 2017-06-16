@@ -1,6 +1,6 @@
 'use strict';
 
-var REST_URL = '/hmsortapp', config, moduleName = 'frontend';
+var REST_URL = '/sortapp', config, moduleName = 'frontend';
 
 var app = angular.module('frontend', [ 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngjQuery', 'ui.bootstrap', 'ngTable', 'ngFileUpload', 'angular-growl', 'angular.vertilize', 'ngTagsInput', 'ui.select', 'ae-datetimepicker', 'blockUI' ]);
 
@@ -74,9 +74,7 @@ app.config([ 'growlProvider', 'blockUIConfig', function(growlProvider, blockUICo
 
 	blockUIConfig.requestFilter = function(config) {
 		// If the request starts with '/rest/user' ...
-		if (config.url.match(/^\/ccgapprovals\/rest\/user($|\/).*/)) {
-			return false; // ... don't block it.
-		}
+		
 	};
 } ]);
 
